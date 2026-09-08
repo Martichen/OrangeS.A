@@ -1,3 +1,5 @@
+/* 1. VARIABLES GLOBALES Y BASE DEL DISEÑO: Bloque más importante: define los colores y la base visual del sitio. */
+
 :root {
     --orange: #ff6600;
     --orange-light: #ff8833;
@@ -19,6 +21,8 @@ body {
     color: var(--text);
     background: var(--bg);
 }
+
+/* 2. CABECERA Y NAVEGACIÓN PRINCIPAL: Este bloque controla la identidad visual superior del sitio. */
 
 header {
     background: linear-gradient(135deg, var(--orange) 0%, var(--orange-light) 100%);
@@ -61,6 +65,8 @@ header p {
 .main-nav a:hover {
     background: #fff4eb;
 }
+
+/* 3. CONTENEDOR, SECCIONES Y TITULOS: Bloque clave para la estructura de contenido y el orden visual. */
 
 .container {
     max-width: 1200px;
@@ -115,6 +121,7 @@ section h3 {
     padding: 20px;
 }
 
+/* 4. TARJETAS, GRID Y ESTADISTICAS: Este bloque da forma a los bloques informativos y números clave. */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -183,6 +190,9 @@ ul {
 li {
     margin-bottom: 8px;
 }
+
+
+/* 5. PIE DE PÁGINA Y RESPONSIVE: El footer cierra la estructura y el responsive adapta el layout. */
 
 footer {
     background: #333;
